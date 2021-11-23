@@ -7,9 +7,9 @@ The code goes into Home Assistant config and the Home Assistant is installed in 
 
 You need to create an image file (1920 x 1080px resolution) which contain the WiFi QR code and upload it to /config/www folder. Once you uploaded it, you should be able to view at http://[home assistant IP and port]/local.[your image filename]
 
-You use this site to generate your WiFi QR code; https://www.qr-code-generator.com/solutions/wifi-qr-code/
+You can use this site to generate your WiFi QR code; https://www.qr-code-generator.com/solutions/wifi-qr-code/
 
-Once you have uploaded the code, you just need to add the script to Alexa. If you are using Nabu Casa, just add the script entity in the cloud configuration in your Home Assistant configuration. Once you have done that, let Alexa rediscover the new entity.
+Once you have uploaded the code, you just need to add the script to Alexa. If you are using Nabu Casa, just add the script entity in the cloud configuration in your Home Assistant. Once you have done that, let Alexa rediscover the new entity.
 
 Finally, you just need to create a new Routine in your Alexa app...
 
