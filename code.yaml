@@ -1,0 +1,18 @@
+##########################################################
+# Shell Command
+##########################################################
+shell_command:
+  stream_wifi_qr_code: DISPLAY=:0.0 cvlc --fullscreen --no-osd --image-duration=-1 http://192.168.1.21:8123/local/wifi_qr_code.png
+  stop_streaming: killall vlc
+
+##########################################################
+# Script
+##########################################################
+script:
+  stream_wifi_qr_code:
+    alias: 'Stream WiFI QR Code'
+    sequence:
+      - service: shell_command.stream_wifi_qr_code
+      - delay:
+          seconds: 30
+      - service: shell_command.stop_streaming
